@@ -1,6 +1,6 @@
 class CreateNewStats < ActiveRecord::Migration
   def change
-  	  	create_table :Stats do |t|
+  	  	create_table :stats do |t|
   		t.string :fname
   		t.string :lname
   		t.string :birthday

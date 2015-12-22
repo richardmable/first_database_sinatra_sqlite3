@@ -5,3 +5,8 @@ end
 
 class Stat <ActiveRecord::Base
 end
+
+class Profile < ActiveRecord::Base
+
+end
+

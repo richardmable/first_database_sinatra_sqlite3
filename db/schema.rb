@@ -13,18 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20151222162300) do
 
-  create_table "Stats", force: :cascade do |t|
-    t.string "fname"
-    t.string "lname"
-    t.string "birthday"
-    t.string "email"
-  end
-
-  create_table "Users", force: :cascade do |t|
-    t.string   "email"
-    t.datetime "birthday"
-  end
-
   create_table "profiles", force: :cascade do |t|
     t.string "fname"
     t.string "lname"
@@ -32,7 +20,14 @@ ActiveRecord::Schema.define(version: 20151222162300) do
     t.string "email"
   end
 
-  create_table "user", force: :cascade do |t|
+  create_table "stats", force: :cascade do |t|
+    t.string "fname"
+    t.string "lname"
+    t.string "birthday"
+    t.string "email"
+  end
+
+  create_table "users", force: :cascade do |t|
     t.string   "email"
     t.datetime "birthday"
   end
